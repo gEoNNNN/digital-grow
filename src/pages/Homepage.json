@@ -29,7 +29,8 @@
   },
   "EN": {
     "hero": {
-      "title": "Creștere Digitală Garantată Pentru Afacerea Ta",
+      "title1": "Creștere Digitală Garantată",
+      "title2": "Pentru Afacerea Ta",
       "description": "Site-uri web, branding și automatizări inteligente – toate într-un singur loc",
       "primaryButton": "Solicită ofertă",
       "sectiononetitle": "Descoperă pe scurt serviciile noastre esențiale",
@@ -56,7 +57,8 @@
  },
   "RU": {
     "hero": {
-     "title": "Creștere Digitală Garantată Pentru Afacerea Ta",
+      "title1": "Creștere Digitală Garantată",
+      "title2": "Pentru Afacerea Ta",
       "description": "Site-uri web, branding și automatizări inteligente – toate într-un singur loc",
       "primaryButton": "Solicită ofertă",
       "sectiononetitle": "Descoperă pe scurt serviciile noastre esențiale",
