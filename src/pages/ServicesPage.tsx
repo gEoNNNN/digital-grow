@@ -207,6 +207,98 @@ const ServicesPage: React.FC = () => {
           </div>
         </div>
 
+        {/* Section Four - Package Offers */}
+        <div className="services-section">
+          <h2 className="services-section-title">{content.services.sectionfourtitle}</h2>
+          
+          <div className="package-cards">
+            {/* Package Card 1 - Startup Light */}
+            <div className="package-card">
+              <h3 className="package-card-title">{content.services.sectionfourcard1title}</h3>
+              
+              <div className="package-services">
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard1service1}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard1service2}</span>
+                </div>
+              </div>
+
+              <div className="package-pricing">
+                <div className="package-price">{content.services.sectionfourcard1price} lei</div>
+                <div className="package-discount">{content.services.sectionfourcard1discount}</div>
+              </div>
+
+              <button className="package-card-button">{content.services.sectionfourcardbutton}</button>
+            </div>
+
+            {/* Package Card 2 - Business Smart */}
+            <div className="package-card">
+              <h3 className="package-card-title">{content.services.sectionfourcard2title}</h3>
+              
+              <div className="package-services">
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard2service1}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard2service2}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard2service3}</span>
+                </div>
+              </div>
+
+              <div className="package-pricing">
+                <div className="package-price">{content.services.sectionfourcard2price} lei</div>
+                <div className="package-discount">{content.services.sectionfourcard2discount}</div>
+              </div>
+
+              <button className="package-card-button">{content.services.sectionfourcardbutton}</button>
+            </div>
+
+            {/* Package Card 3 - Enterprise Complete */}
+            <div className="package-card">
+              <h3 className="package-card-title">{content.services.sectionfourcard3title}</h3>
+              
+              <div className="package-services">
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard3service1}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard3service2}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard3service3}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard3service4}</span>
+                </div>
+                <div className="package-service">
+                  <span className="checkmark">✓</span>
+                  <span>{content.services.sectionfourcard3service5}</span>
+                </div>
+              </div>
+
+              <div className="package-pricing">
+                <div className="package-price">{content.services.sectionfourcard3price} lei</div>
+                <div className="package-discount">{content.services.sectionfourcard3discount}</div>
+              </div>
+
+              <button className="package-card-button">{content.services.sectionfourcardbutton}</button>
+            </div>
+          </div>
+        </div>
+
         <Footer />
       </div>
     </div>

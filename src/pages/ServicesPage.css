@@ -221,7 +221,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   width: 25%;
-  margin-left :35%;
+  margin-left: 35%;
   box-shadow: 
     0 0 0.5vw var(--button-shadow),
     0 0 1vw var(--button-shadow-medium);
@@ -233,6 +233,129 @@
   box-shadow: 
     0 0 1vw var(--button-shadow),
     0 0 2vw var(--button-shadow-medium);
+}
+
+/* Package Cards */
+.package-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3vw;
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
+.package-card {
+  background-color: var(--tertiary-bg);
+  border-radius: 1.5vw;
+  padding: 3vw 2.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid var(--card-border);
+  cursor: pointer;
+  min-height: 35vw;
+}
+
+.package-card:hover {
+  transform: translateY(-0.5vw);
+  box-shadow: 0 1.5vw 3vw var(--section-shadow);
+  border-color: var(--card-border-hover);
+}
+
+.package-card-title {
+  color: var(--text-color);
+  font-size: 1.8vw;
+  font-weight: 700;
+  margin: 0 0 2.5vw 0;
+  font-family: "DM Sans", sans-serif;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.package-services {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vw;
+  margin-bottom: 3vw;
+  width: 100%;
+}
+
+.package-service {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  padding: 0.8vw;
+  background-color: rgba(143, 188, 187, 0.1);
+  border-radius: 0.8vw;
+  border-left: 4px solid var(--button-color);
+}
+
+.package-service .checkmark {
+  background-color: #4CAF50;
+  color: white;
+  width: 1.5vw;
+  height: 1.5vw;
+  font-size: 1vw;
+}
+
+.package-service span:last-child {
+  color: var(--text-color);
+  font-size: 1vw;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+}
+
+.package-pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3vw;
+}
+
+.package-price {
+  color: var(--button-color);
+  font-size: 2.5vw;
+  font-weight: 900;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 0.5vw;
+}
+
+.package-discount {
+  color: var(--text-secondary);
+  font-size: 0.9vw;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  font-style: italic;
+}
+
+.package-card-button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 1.5vw;
+  padding: 1.2vw 3vw;
+  font-size: 1.1vw;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80%;
+  margin-top: auto;
+  box-shadow: 
+    0 0 0.8vw var(--button-shadow),
+    0 0 1.5vw var(--button-shadow-medium);
+}
+
+.package-card-button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-0.2vw) scale(1.05);
+  box-shadow: 
+    0 0 1.2vw var(--button-shadow),
+    0 0 2.5vw var(--button-shadow-medium);
 }
 
 /* Responsive design */
@@ -325,6 +448,61 @@
     font-size: 2.5vw;
     border-radius: 3vw;
   }
+
+  /* Package Cards Responsive */
+  .package-cards {
+    grid-template-columns: 1fr;
+    gap: 5vw;
+    max-width: 90vw;
+  }
+
+  .package-card {
+    padding: 5vw 4vw;
+    border-radius: 3vw;
+    min-height: auto;
+  }
+
+  .package-card-title {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+
+  .package-services {
+    gap: 2.5vw;
+    margin-bottom: 5vw;
+  }
+
+  .package-service {
+    gap: 2vw;
+    padding: 2vw;
+    border-radius: 2vw;
+  }
+
+  .package-service .checkmark {
+    width: 4vw;
+    height: 4vw;
+    font-size: 2.5vw;
+  }
+
+  .package-service span:last-child {
+    font-size: 2.5vw;
+  }
+
+  .package-price {
+    font-size: 6vw;
+    margin-bottom: 1vw;
+  }
+
+  .package-discount {
+    font-size: 2.2vw;
+  }
+
+  .package-card-button {
+    padding: 3vw 5vw;
+    font-size: 2.8vw;
+    border-radius: 3vw;
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -406,5 +584,58 @@
     padding: 4vw 5vw;
     font-size: 3vw;
     border-radius: 4vw;
+  }
+
+  /* Package Cards Mobile */
+  .package-cards {
+    gap: 6vw;
+    max-width: 95vw;
+  }
+
+  .package-card {
+    padding: 6vw 5vw;
+    border-radius: 4vw;
+  }
+
+  .package-card-title {
+    font-size: 6vw;
+    margin-bottom: 5vw;
+  }
+
+  .package-services {
+    gap: 3vw;
+    margin-bottom: 6vw;
+  }
+
+  .package-service {
+    gap: 3vw;
+    padding: 3vw;
+    border-radius: 3vw;
+  }
+
+  .package-service .checkmark {
+    width: 5vw;
+    height: 5vw;
+    font-size: 3vw;
+  }
+
+  .package-service span:last-child {
+    font-size: 3vw;
+  }
+
+  .package-price {
+    font-size: 7vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .package-discount {
+    font-size: 2.5vw;
+  }
+
+  .package-card-button {
+    padding: 4vw 6vw;
+    font-size: 3.5vw;
+    border-radius: 4vw;
+    width: 95%;
   }
 }
