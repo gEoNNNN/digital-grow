@@ -12,6 +12,7 @@ import section2card1 from "../assets/sectiontwocard1.svg"
 import section2card2 from "../assets/sectiontwocard2.svg"
 import section2card3 from "../assets/sectiontwocard3.svg"
 import Footer from "../components/Footer"
+import NextLevelSection from "../components/NextLevel";
 
 const HomePage = () => {
   const currentLanguage = 'RO'
@@ -105,13 +106,10 @@ const HomePage = () => {
             <div className="homepage-section-three-content">
             </div>
           </div>
-          <div className="homepage-section-four">
-            <h3  className="homepage-section-one-title" dangerouslySetInnerHTML={{ __html: content.hero.sectionfourtitle }} />
-
-            <button className="homepage-section-four-button">
-              {content.hero.sectionfourbutton}
-            </button>
-          </div>
+          <NextLevelSection
+            title={content.hero.sectionfourtitle}
+            buttonText={content.hero.sectionfourbutton}
+          />
           <Footer />
         </div>
       </div>

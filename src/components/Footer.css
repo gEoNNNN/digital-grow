@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--footer-bg);
+  background-color: var(--primary);
   color: var(--footer-text);
   padding: 3rem 0 1rem 0;
   margin-top: auto;
@@ -18,34 +18,34 @@
 
 /* Left section - 60% (Social Media) */
 .footer-left {
-  flex: 0 0 60%;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-left: -15vw;
 }
 
 .footer-title {
   color: var(--text-color);
-  font-size: 1.8rem;
+  font-size: 1.7vw;
   font-weight: 700;
   margin: 0;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: 0 0.2vw 0.4vw var(--text-muted);
 }
 
 .footer-description {
-  color: var(--text-secondary);
-  font-size: 1rem;
+  color: var(--text-color);
+  font-size: 0.8vw;
+  text-align: center;
   line-height: 1.6;
   margin: 0;
   max-width: 90%;
 }
 
 .footer-social-icons {
+  margin-left: 2.5vw;
   display: flex;
-  gap: 1rem;
+  gap: 2.5vw;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -56,10 +56,8 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: var(--card-bg);
   border-radius: 50%;
   transition: all 0.3s ease;
-  border: 1px solid var(--card-border);
 }
 
 .social-link:hover {
@@ -70,8 +68,8 @@
 }
 
 .social-link img {
-  width: 20px;
-  height: 20px;
+  width: 2vw;
+  height: 2vw;
   transition: filter 0.3s ease;
 }
 
@@ -80,6 +78,7 @@
 }
 
 .footer-contact-info {
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -87,22 +86,22 @@
 
 .footer-contact-title {
   color: var(--text-color);
-  font-size: 1.1rem;
+  font-size: 1.7vw;
   font-weight: 600;
   margin: 0;
 }
 
 .footer-srl {
-  color: var(--text-secondary);
-  font-size: 0.95rem;
-  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.2vw;
+  font-weight: 300;
   margin: 0;
 }
 
 .footer-email {
-  color: var(--button-color);
-  font-size: 0.95rem;
-  font-weight: 500;
+  color: var(--text-color);
+  font-size: 1.2vw;
+  font-weight: 300;
   margin: 0;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -118,17 +117,15 @@
   flex: 0 0 40%;
   display: flex;
   flex-direction: column;
+  margin-left: 10vw;
+  margin-top: -2vw;
 }
 
 .footer-nav-title {
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: 1.7vw;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .footer-navigation {
@@ -149,10 +146,10 @@
 }
 
 .footer-nav-list a {
-  color: var(--text-secondary);
+  color: var(--text-color);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1vw;
+  font-weight: 300;
   transition: all 0.3s ease;
   padding: 0.5rem 0;
   display: block;
@@ -175,9 +172,10 @@
 }
 
 .footer-copyright {
-  color: var(--text-muted);
-  font-size: 0.9rem;
+  color: var(--text-color);
+  font-size: 1.2vw;
   margin: 0;
+  font-weight: 300;
 }
 
 /* Responsive design */
