@@ -5,7 +5,7 @@
       "title2": "Pentru Afacerea Ta",
       "description": "Site-uri web, branding și automatizări inteligente – toate într-un singur loc",
       "primaryButton": "Solicită ofertă",
-      "sectiononetitle": "Descoperă pe scurt serviciile noastre esențiale",
+      "sectiononetitle": "Descoperă pe scurt <br><span class='highlight'>serviciile noastre</span> esențiale",
       "sectiononecard1title" : "Dezvoltare Web",
       "sectiononecard2title" : "Chatbot & Automatizare",
       "sectiononecard3title" : "Branding & Design",
@@ -15,7 +15,7 @@
       "sectiononecard3description" : "Identitate vizuală care iese în evidență.",
       "sectiononecard4description" : "Vinde online 24/7 și gestionează-ți clienții inteligent.",
       "sectiononebutton" : "Vezi mai multe",
-      "sectiontwotitle": "Află de ce clienții aleg DigitalGrow",
+      "sectiontwotitle": "Află de ce <span class='highlight'>clienții aleg</span> DigitalGrow",
       "sectiontwocard1title" : "Soluții integrate",
       "sectiontwocard2title" : "Suport rapid",
       "sectiontwocard3title" : "Calitate garantată",
@@ -23,7 +23,7 @@
       "sectiontwocard2description" : "Suntem aproape de clienți chiar și după lansare. Oferim mentenanță lunară, actualizări constante și suport prompt – problemele se rezolvă rapid, înainte să devină critice.",
       "sectiontwocard3description" : "Respectăm cele mai bune practici în design și dezvoltare. Fiecare proiect este testat riguros, adaptat feedback-ului clientului și optimizat pentru performanță și conversie.",
       "sectionthreetitle": "Vezi ce spun alții despre noi",
-      "sectionfourtitle": "Ești gata să îți duci afacerea la următorul nivel?",
+      "sectionfourtitle": "Ești gata să îți duci afacerea la <br><span class='highlight'>următorul nivel</span>?",
       "sectionfourbutton": "Contactează-ne acum"
     }
   },

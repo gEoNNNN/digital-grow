@@ -37,41 +37,49 @@ const HomePage = () => {
             {content.hero.description}
           </h1>
           <button className="homepage-main-section-button">
-            {content.hero.primaryButton}
             <img src={iconoferta}/>
+            {content.hero.primaryButton}
           </button>
           </div>
           <div className="homepage-section-one">
-            <h2 className="homepage-section-one-title">
-              {content.hero.sectiononetitle}
-            </h2>
+            <h3  className="homepage-section-one-title" dangerouslySetInnerHTML={{ __html: content.hero.sectiononetitle }} />
             <div className="homepage-section-one-cards">
               <div className="homepage-section-one-card">
                 <h3>{content.hero.sectiononecard1title}</h3>
                 <p>{content.hero.sectiononecard1description}</p>
+                <button className="homepage-section-one-card-button">
+                  {content.hero.sectiononebutton}
+                </button>
                 <img src={section1card1}/>
               </div>
               <div className="homepage-section-one-card">
                 <h3>{content.hero.sectiononecard2title}</h3>
                 <p>{content.hero.sectiononecard2description}</p>
+                <button className="homepage-section-one-card-button">
+                  {content.hero.sectiononebutton}
+                </button>
                 <img src={section1card2}/>
               </div>
               <div className="homepage-section-one-card">
                 <h3>{content.hero.sectiononecard3title}</h3>
                 <p>{content.hero.sectiononecard3description}</p>
+                <button className="homepage-section-one-card-button">
+                  {content.hero.sectiononebutton}
+                </button>
                 <img src={section1card3}/>
               </div>
               <div className="homepage-section-one-card">
                 <h3>{content.hero.sectiononecard4title}</h3>
                 <p>{content.hero.sectiononecard4description}</p>
+                <button className="homepage-section-one-card-button">
+                  {content.hero.sectiononebutton}
+                </button>
                 <img src={section1card4}/>
               </div>
             </div>
           </div>
           <div className="homepage-section-two">
-            <h2 className="homepage-section-two-title">
-              {content.hero.sectiontwotitle}
-            </h2>
+            <h3  className="homepage-section-one-title" dangerouslySetInnerHTML={{ __html: content.hero.sectiontwotitle }} />
             <div className="homepage-section-two-cards">
               <div className="homepage-section-two-card">
                 <img src={section2card1} alt="Soluții integrate"/>
@@ -98,9 +106,8 @@ const HomePage = () => {
             </div>
           </div>
           <div className="homepage-section-four">
-            <h1 className="homepage-section-four-title">
-              {content.hero.sectionfourtitle}
-            </h1>
+            <h3  className="homepage-section-one-title" dangerouslySetInnerHTML={{ __html: content.hero.sectionfourtitle }} />
+
             <button className="homepage-section-four-button">
               {content.hero.sectionfourbutton}
             </button>
