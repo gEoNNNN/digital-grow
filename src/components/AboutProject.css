@@ -1,0 +1,30 @@
+.project-popup-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-popup-content {
+  background: #fff;
+  padding: 2vw 3vw;
+  border-radius: 1vw;
+  box-shadow: 0 0 2vw #000;
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.project-popup-close {
+  position: absolute;
+  top: 1vw;
+  right: 1vw;
+  background: none;
+  border: none;
+  font-size: 2vw;
+  cursor: pointer;
+}

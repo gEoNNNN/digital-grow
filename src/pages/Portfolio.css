@@ -29,13 +29,14 @@
 }
 
 .portfolio-content {
-   position: relative;
+  position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: visible;
 }
 
 .portfolio-main-section {
+  position: relative; /* Ensure stacking context */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -74,12 +75,25 @@
 
 .portfolio-bg-line {
   position: absolute;
-  z-index: 1000; /* Lowered from 1000 */
-  margin-top: 75vw;
-  margin-left: 23vw;
+  z-index: 1;
+  width: 48.5vw;
+  margin-left: 20vw;
+  margin-top: 17vw;
+}
+
+.portfolio-bg-fade {
+  width: 100vw;
+  height: 10vw;
+  background-color: white;
+  position: absolute;
+  margin-top: 55vw;
+  background: var(--fog);
+  box-shadow: 0 0 16vw 8vw var(--primary), 0 0 18vw 10vw var(--primary);
 }
 
 .portfolio-main-section-button {
+  z-index: 10000; /* Higher than .portfolio-bg-fade */
+  position: relative;
   background-color: var(--button-color);
   color: var(--button-text-color);
   border: none;
@@ -107,7 +121,7 @@
   width: 100%;
   padding: 8vw 5vw;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   gap: 6vw;
@@ -117,6 +131,7 @@
   width: 100%;
   max-width: 80vw;
   margin: 0 auto;
+  z-index: 2;
 }
 
 .project-content {
@@ -182,18 +197,10 @@
   box-shadow: 0 0 1vw var(--button-shadow);
 }
 
-.portfolio-call-button {
-  background-color: var(--button-color);
-  color: var(--button-text-color);
-  border: none;
-  border-radius: 1.5vw;
-  padding: 1vw 3vw;
-  font-size: 1.2vw;
-  font-weight: 700;
-  font-family: "DM Sans", sans-serif;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 1vw var(--button-shadow);
+.portfolio-call-button:hover {
+  background-color: var(--button-hover-color);
+  transform: translateY(-0.2vw) scale(1.05);
+  box-shadow: 0 0 2vw var(--button-shadow), 0 0 4vw var(--button-shadow-medium);
 }
 
 .project-info {
@@ -278,7 +285,7 @@
   }
 
   .project-content,
-  .project-content-reverse {
+  .project-content_reversed {
     flex-direction: column;
     gap: 4vw;
     padding: 5vw;
@@ -339,7 +346,7 @@
   }
 
   .project-content,
-  .project-content-reverse {
+  .project-content_reversed {
     gap: 5vw;
     padding: 6vw;
     border-radius: 4vw;

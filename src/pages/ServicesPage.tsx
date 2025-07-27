@@ -5,6 +5,7 @@ import Filter from "../assets/homepagefilter.png"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import servicesContent from "./ServicesPage.json"
+import NextLevelSection from '../components/NextLevel'
 
 const ServicesPage: React.FC = () => {
   const currentLanguage = 'RO'
@@ -18,6 +19,7 @@ const ServicesPage: React.FC = () => {
       </video>
       <img src={Filter} alt="Filter overlay" className="video-filter" />
       <div className="services-content">
+        <div className="portfolio-bg-fade"></div>
         <NavBar/>
         <div className="services-main-section">
           <h1 className="services-main-section-title">
@@ -307,7 +309,10 @@ const ServicesPage: React.FC = () => {
             </div>
           </div>
         </div>
-
+          <NextLevelSection
+            title={content.services.sectionfourtitle1}
+            buttonText={content.services.sectionfourbutton}
+          />
         <Footer />
       </div>
     </div>

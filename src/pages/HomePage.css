@@ -299,6 +299,16 @@
   margin-left: -15vw;
 }
 
+.portfolio-bg-fade {
+  width: 100vw;
+  height: 10vw;
+  background-color: (var(--primary));
+  position: absolute;
+  margin-top: 10vw;
+  background: var(--fog);
+  box-shadow: 0 0 16vw 8vw var(--primary), 0 0 32vw 16vw var(--primary);
+}
+
 .homepage-section-two-card h3 {
   text-align: left;
   font-size: 2.5vw;

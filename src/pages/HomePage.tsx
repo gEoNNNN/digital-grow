@@ -26,6 +26,7 @@ const HomePage = () => {
       </video>
       <img src={Filter} alt="Filter overlay" className="video-filter" />
       <div className="homepage-content">
+        <div className="portfolio-bg-fade"></div>
         <NavBar/>
         <div className="homepage-main-section">
           <h1 className="homepage-main-section-title">

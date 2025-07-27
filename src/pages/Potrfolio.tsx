@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css'
 import BG from "../assets/0725.mp4"
 import project1 from "../assets/picolinologo.svg"
@@ -9,8 +9,17 @@ import line from "../assets/path.png"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 import portfolioContent from "./Portfolio.json"
+import ProjectPopup from "../components/AboutProject"
 
 const Portfolio: React.FC = () => {
+  const [popupOpen, setPopupOpen] = useState(false);
+  const [popupData, setPopupData] = useState({ title: "", description: "" });
+
+  const handleProjectClick = (title: string, description: string) => {
+    setPopupData({ title, description });
+    setPopupOpen(true);
+  };
+
   const currentLanguage = 'RO'
   const content = portfolioContent[currentLanguage]
 
@@ -22,7 +31,7 @@ const Portfolio: React.FC = () => {
       </video>
       <img src={Filter} alt="Filter overlay" className="video-filter" />
       <div className="portfolio-content">
-        <img src={line} alt="Background line" className="portfolio-bg-line" />
+        <div className="portfolio-bg-fade"></div>
         <NavBar/>
         <div className="portfolio-main-section">
           <h1 className="portfolio-main-section-title">
@@ -39,6 +48,7 @@ const Portfolio: React.FC = () => {
 
         {/* Projects Section */}
         <div className="portfolio-projects-section">
+          <img src={line} alt="Background line" className="portfolio-bg-line" />
           {/* Project 1 - Piccolino (Logo left, description right) */}
           <div className="portfolio-project">
             <div className="project-content">
@@ -49,7 +59,15 @@ const Portfolio: React.FC = () => {
                 <p className="project-description">
                   {content.Portofoliu.project1description}
                 </p>
-                <button className="project-button">
+                <button
+                  className="project-button"
+                  onClick={() =>
+                    handleProjectClick(
+                      "Piccolino",
+                      content.Portofoliu.project1description
+                    )
+                  }
+                >
                   {content.Portofoliu.prokectbutton}
                 </button>
               </div>
@@ -66,7 +84,15 @@ const Portfolio: React.FC = () => {
                 <p className="project-description">
                   {content.Portofoliu.prject2description}
                 </p>
-                <button className="project-button">
+                <button
+                  className="project-button"
+                  onClick={() =>
+                    handleProjectClick(
+                      "Krov",
+                      content.Portofoliu.prject2description
+                    )
+                  }
+                >
                   {content.Portofoliu.prokectbutton}
                 </button>
               </div>
@@ -84,19 +110,39 @@ const Portfolio: React.FC = () => {
                 <p className="project-description">
                   {content.Portofoliu.project3description}
                 </p>
-                <button className="project-button">
+                <button
+                  className="project-button"
+                  onClick={() =>
+                    handleProjectClick(
+                      "Lumeta",
+                      content.Portofoliu.project3description
+                    )
+                  }
+                >
                   {content.Portofoliu.prokectbutton}
                 </button>
               </div>
             </div>
           </div>
-           {/* After the projects list */}
-        <div className="portfolio-call-section">
-          <p className="portfolio-call-text" dangerouslySetInnerHTML={{ __html: content.Portofoliu.call }}></p>
-          <button className="portfolio-call-button">{content.Portofoliu.callbutton}</button>
+          {/* Project 4 - Call to Action */}
+          <div className="portfolio-project">
+            <div className="portfolio-call-section">
+              <p
+                className="portfolio-call-text"
+                dangerouslySetInnerHTML={{ __html: content.Portofoliu.call }}
+              ></p>
+              <button className="portfolio-call-button">
+                {content.Portofoliu.callbutton}
+              </button>
+            </div>
+          </div>
         </div>
-
-        </div>
+        <ProjectPopup
+          open={popupOpen}
+          onClose={() => setPopupOpen(false)}
+          title={popupData.title}
+          description={popupData.description}
+        />
         <Footer />
       </div>
     </div>

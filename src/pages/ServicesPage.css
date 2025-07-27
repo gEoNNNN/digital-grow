@@ -353,6 +353,16 @@
   font-family: "DM Sans", sans-serif;
 }
 
+.portfolio-bg-fade {
+  width: 100vw;
+  height: 10vw;
+  background-color: white;
+  position: absolute;
+  margin-top: 55vw;
+  background: var(--fog);
+  box-shadow: 0 0 16vw 8vw var(--primary), 0 0 18vw 10vw var(--primary);
+}
+
 .package-card-button {
   background-color: var(--button-color);
   color: var(--button-text-color);
