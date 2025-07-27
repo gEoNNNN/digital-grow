@@ -1,10 +1,9 @@
 .portfolio-page {
-  position: relative;
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow: hidden; /* Prevent extra scroll bar */
 }
 
 .background-video {
@@ -30,9 +29,10 @@
 }
 
 .portfolio-content {
-  position: relative;
-  z-index: 1;
+   position: relative;
   width: 100%;
+  min-height: 100vh;
+  overflow: visible;
 }
 
 .portfolio-main-section {
@@ -70,6 +70,13 @@
   font-family: "DM Sans", sans-serif;
   max-width: 70vw;
   line-height: 1.6;
+}
+
+.portfolio-bg-line {
+  position: absolute;
+  z-index: 1000; /* Lowered from 1000 */
+  margin-top: 75vw;
+  margin-left: 23vw;
 }
 
 .portfolio-main-section-button {
@@ -137,10 +144,56 @@
 }
 
 .project-logo img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 25vw;
+  max-height: 25vw;
   object-fit: contain;
   transition: filter 0.3s ease;
+}
+
+.portfolio-call-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4vw 0 0 0;
+  gap: 2vw;
+  margin-top: -9vw;
+  margin-bottom: 5vw;
+}
+
+.portfolio-call-text {
+  font-size: 4vw;
+  color: var(--text-color);
+  font-weight: 700;
+  text-align: center;
+}
+
+
+.portfolio-call-button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 1.5vw;
+  padding: 1vw 3vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 1vw var(--button-shadow);
+}
+
+.portfolio-call-button {
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  border: none;
+  border-radius: 1.5vw;
+  padding: 1vw 3vw;
+  font-size: 1.2vw;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 1vw var(--button-shadow);
 }
 
 .project-info {
@@ -151,15 +204,19 @@
 }
 
 .project-description {
-  color: var(--text-secondary);
-  font-size: 1.1vw;
+  color: var(--text-color);
+  font-size: 1.8vw;
   font-weight: 400;
   margin: 0;
   line-height: 1.6;
   font-family: "DM Sans", sans-serif;
+  text-shadow: 0 0.2vw 0.4vw var(--text-muted);
+  text-align: center;
+  margin-top: 3vw;
 }
 
 .project-button {
+  z-index: 10000;
   background-color: var(--button-color);
   color: var(--button-text-color);
   border: none;
@@ -174,6 +231,8 @@
   box-shadow: 
     0 0 0.5vw var(--button-shadow),
     0 0 1vw var(--button-shadow-medium);
+  margin-top: 1vw;
+  margin-left: 15vw;
 }
 
 .project-button:hover {

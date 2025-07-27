@@ -22,6 +22,7 @@ const Portfolio: React.FC = () => {
       </video>
       <img src={Filter} alt="Filter overlay" className="video-filter" />
       <div className="portfolio-content">
+        <img src={line} alt="Background line" className="portfolio-bg-line" />
         <NavBar/>
         <div className="portfolio-main-section">
           <h1 className="portfolio-main-section-title">
@@ -58,6 +59,9 @@ const Portfolio: React.FC = () => {
           {/* Project 2 - Krov (Description left, logo right) */}
           <div className="portfolio-project">
             <div className="project-content project-content-reverse">
+              <div className="project-logo">
+                <img src={project2} alt="Krov Logo" />
+              </div>
               <div className="project-info">
                 <p className="project-description">
                   {content.Portofoliu.prject2description}
@@ -66,9 +70,7 @@ const Portfolio: React.FC = () => {
                   {content.Portofoliu.prokectbutton}
                 </button>
               </div>
-              <div className="project-logo">
-                <img src={project2} alt="Krov Logo" />
-              </div>
+      
             </div>
           </div>
 
@@ -88,8 +90,13 @@ const Portfolio: React.FC = () => {
               </div>
             </div>
           </div>
+           {/* After the projects list */}
+        <div className="portfolio-call-section">
+          <p className="portfolio-call-text" dangerouslySetInnerHTML={{ __html: content.Portofoliu.call }}></p>
+          <button className="portfolio-call-button">{content.Portofoliu.callbutton}</button>
         </div>
 
+        </div>
         <Footer />
       </div>
     </div>

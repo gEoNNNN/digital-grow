@@ -84,12 +84,12 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="navbar-item">
-            <Link to="/about" className="navbar-link">
+            <Link to="/aboutus" className="navbar-link">
               {currentTranslations.about}
             </Link>
           </li>
            <li className="navbar-item">
-            <Link to="/contact" className="navbar-link">
+            <Link to="/contacts" className="navbar-link">
               {currentTranslations.contact}
             </Link>
           </li>
