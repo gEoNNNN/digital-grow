@@ -45,7 +45,7 @@ const ServicesPage: React.FC = () => {
 
         {/* Section One - Web Development */}
         <div className="services-section">
-          <h2 className="services-section-title">{content.services.sectiononetitle}</h2>
+          <h2 className="services-section-title" dangerouslySetInnerHTML={{ __html: content.services.sectiononetitle }}></h2>
           <p className="services-section-description">{content.services.sectiononedescription}</p>
           
           <div className="services-cards">
@@ -103,7 +103,7 @@ const ServicesPage: React.FC = () => {
 
         {/* Section Two - Chatbot & AI */}
         <div className="services-section">
-          <h2 className="services-section-title">{content.services.sectiontwotitle}</h2>
+          <h2 className="services-section-title" dangerouslySetInnerHTML={{ __html: content.services.sectiontwotitle }}></h2>
           <p className="services-section-description">{content.services.sectiontwodescription}</p>
           
           <div className="services-cards">
@@ -161,7 +161,7 @@ const ServicesPage: React.FC = () => {
 
         {/* Section Three - Branding & Design */}
         <div className="services-section">
-          <h2 className="services-section-title">{content.services.sectionthreetitle}</h2>
+          <h2 className="services-section-title" dangerouslySetInnerHTML={{ __html: content.services.sectionthreetitle }} ></h2>
           <p className="services-section-description">{content.services.sectionthreedescription}</p>
           
           <div className="services-cards">
@@ -228,8 +228,11 @@ const ServicesPage: React.FC = () => {
               </div>
 
               <div className="package-pricing">
-                <div className="package-price">{content.services.sectionfourcard1price} lei</div>
-                <div className="package-discount">{content.services.sectionfourcard1discount}</div>
+                <div className="package-price1">
+                  {content.services.sectionfourcard1price}
+                  <span className="package-price-currency"> MDL</span>
+                </div>
+                <div className="package-discount1">{content.services.sectionfourcard1discount}</div>
               </div>
 
               <button className="package-card-button">{content.services.sectionfourcardbutton}</button>
@@ -255,8 +258,11 @@ const ServicesPage: React.FC = () => {
               </div>
 
               <div className="package-pricing">
-                <div className="package-price">{content.services.sectionfourcard2price} lei</div>
-                <div className="package-discount">{content.services.sectionfourcard2discount}</div>
+                <div className="package-price2">
+                  {content.services.sectionfourcard2price}
+                  <span className="package-price-currency"> MDL</span>
+                </div>
+                <div className="package-discount2">{content.services.sectionfourcard2discount}</div>
               </div>
 
               <button className="package-card-button">{content.services.sectionfourcardbutton}</button>
@@ -290,8 +296,11 @@ const ServicesPage: React.FC = () => {
               </div>
 
               <div className="package-pricing">
-                <div className="package-price">{content.services.sectionfourcard3price} lei</div>
-                <div className="package-discount">{content.services.sectionfourcard3discount}</div>
+                <div className="package-price3">
+                  {content.services.sectionfourcard3price}
+                  <span className="package-price-currency"> MDL</span>
+                </div>
+                <div className="package-discount3">{content.services.sectionfourcard3discount}</div>
               </div>
 
               <button className="package-card-button">{content.services.sectionfourcardbutton}</button>

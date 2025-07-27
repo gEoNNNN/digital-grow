@@ -35,6 +35,15 @@
   width: 100%;
 }
 
+.highlight {
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; 
+  color: transparent;
+  font-size: 5.2vw; 
+}
+
 .services-main-section {
   height: 100vh;
   display: flex;
@@ -48,9 +57,8 @@
 }
 
 .services-main-section-title {
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
-  margin-bottom: 2vw;
   background: var(--text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -62,7 +70,7 @@
 }
 
 .services-main-section-description {
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-bottom: 4vw;
   text-align: center;
   font-weight: 300;
@@ -70,6 +78,8 @@
   font-family: "DM Sans", sans-serif;
   max-width: 60vw;
   line-height: 1.6;
+  text-align: left;
+  margin-top: -4vw;
 }
 
 .services-buttons {
@@ -112,23 +122,19 @@
   z-index: 1;
 }
 
-.services-section-title {
-  font-size: 3vw;
+.services-section-title,.services-section-title,.services-section-title {
+  font-size: 5vw;
   text-align: center;
   color: var(--text-color);
   margin-bottom: 2vw;
   font-weight: 600;
   font-family: "DM Sans", sans-serif;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .services-section-description {
-  font-size: 1.2vw;
+  font-size: 1.6vw;
   text-align: center;
-  color: var(--text-secondary);
+  color: var(--text-color);
   margin-bottom: 4vw;
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
@@ -266,18 +272,13 @@
 
 .package-card-title {
   color: var(--text-color);
-  font-size: 1.8vw;
+  font-size: 2.5vw;
   font-weight: 700;
   margin: 0 0 2.5vw 0;
   font-family: "DM Sans", sans-serif;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .package-services {
-  display: flex;
   flex-direction: column;
   gap: 1.2vw;
   margin-bottom: 3vw;
@@ -289,14 +290,11 @@
   align-items: center;
   gap: 1vw;
   padding: 0.8vw;
-  background-color: rgba(143, 188, 187, 0.1);
   border-radius: 0.8vw;
-  border-left: 4px solid var(--button-color);
 }
 
 .package-service .checkmark {
-  background-color: #4CAF50;
-  color: white;
+  color: #4CAF50;
   width: 1.5vw;
   height: 1.5vw;
   font-size: 1vw;
@@ -310,26 +308,49 @@
 }
 
 .package-pricing {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 3vw;
 }
 
-.package-price {
-  color: var(--button-color);
+
+
+
+.package-price2 {
+  margin-top: 11.5vw;
+}
+
+.package-price3 {
+  margin-top: 2vw;
+}
+
+.package-price1 {
+  margin-top: 15vw;
+}
+.package-price1,
+.package-price2,
+.package-price3 {
+  color: var(--text-color);
   font-size: 2.5vw;
   font-weight: 900;
   font-family: "DM Sans", sans-serif;
   margin-bottom: 0.5vw;
+  background: none;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: initial;
+  background-clip: initial;
 }
 
-.package-discount {
-  color: var(--text-secondary);
+.package-price-currency {
+  font-weight: 300;
+  font-size: 2vw;
+}
+
+.package-discount1,
+.package-discount2,
+.package-discount3 {
+  color: var(--text-color);
   font-size: 0.9vw;
   font-weight: 500;
   font-family: "DM Sans", sans-serif;
-  font-style: italic;
 }
 
 .package-card-button {
