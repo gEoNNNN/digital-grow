@@ -11,7 +11,7 @@ import aboutus3 from "../assets/aboutus3.jpg"
 import icon1 from "../assets/icon1.svg"
 import icon2 from "../assets/icon2.svg"
 import icon3 from "../assets/icon3.svg"
-import icon4 from "../assets/icon4.jpg"
+import icon4 from "../assets/icon4.svg"
 import icon5 from "../assets/icon5.svg"
 
 const AboutUsPage: React.FC = () => {
@@ -26,6 +26,7 @@ const AboutUsPage: React.FC = () => {
       </video>
       <img src={Filter} alt="Filter overlay" className="video-filter" />
       <div className="aboutus-content">
+        <div className="portfolio-bg-fade"></div>
         <NavBar/>
         <div className="aboutus-main-section">
           <h1 className="aboutus-main-section-title">
@@ -38,7 +39,7 @@ const AboutUsPage: React.FC = () => {
 
         {/* Mission Section */}
         <div className="aboutus-section">
-          <h2 className="aboutus-section-title">{content.aboutus.missiontitle}</h2>
+          <h2 className="aboutus-section-title1">{content.aboutus.missiontitle}</h2>
           <p className="aboutus-section-description">{content.aboutus.missiondescription}</p>
         </div>
 
@@ -58,11 +59,11 @@ const AboutUsPage: React.FC = () => {
 
           {/* Story Item 2 - Text left, image right */}
           <div className="story-item story-item-reverse">
-            <div className="story-text">
-              <p>{content.aboutus.section1description2}</p>
-            </div>
             <div className="story-image">
               <img src={aboutus2} alt="DigitalGrow Story 2" />
+            </div>
+            <div className="story-text">
+              <p>{content.aboutus.section1description2}</p>
             </div>
           </div>
 

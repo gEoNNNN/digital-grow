@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         {/* Left section - 60% (Social Media) */}
         <div className="footer-left">
-          <h3 className="footer-title">{currentTranslations.title}</h3>
+          <h3 className="c">{currentTranslations.title}</h3>
           <p className="footer-description">{currentTranslations.description}</p>
           
           <div className="footer-social-icons">

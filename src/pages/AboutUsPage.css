@@ -48,7 +48,7 @@
 }
 
 .aboutus-main-section-title {
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
   margin-bottom: 2vw;
   background: var(--text-gradient);
@@ -62,7 +62,7 @@
 }
 
 .aboutus-main-section-description {
-  font-size: 1.5vw;
+  font-size: 2vw;
   margin-bottom: 4vw;
   text-align: center;
   font-weight: 300;
@@ -82,8 +82,22 @@
 }
 
 .aboutus-section-title {
-  font-size: 3vw;
+  font-size: 4vw;
   text-align: center;
+  margin-left: 10vw;
+  color: var(--text-color);
+  margin-bottom: 2vw;
+  font-weight: 600;
+  font-family: "DM Sans", sans-serif;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.aboutus-section-title1 {
+  font-size: 4vw;
+  text-align: left;
+  margin-left: 10vw;
   color: var(--text-color);
   margin-bottom: 2vw;
   font-weight: 600;
@@ -95,16 +109,17 @@
 }
 
 .aboutus-section-description {
-  font-size: 1.2vw;
-  text-align: center;
+  text-align: left;
+  margin-left: 10vw;
+  font-size: 2vw;
   color: var(--text-secondary);
   margin-bottom: 4vw;
-  font-weight: 400;
+  font-weight: 300;
   font-family: "DM Sans", sans-serif;
   max-width: 80vw;
-  margin-left: auto;
   margin-right: auto;
   line-height: 1.6;
+  width: 60vw;
 }
 
 /* Story Items */
@@ -114,11 +129,9 @@
   gap: 4vw;
   max-width: 90vw;
   margin: 0 auto 6vw auto;
-  background-color: var(--tertiary-bg);
   border-radius: 1.5vw;
   padding: 3vw;
   transition: all 0.3s ease;
-  border: 1px solid var(--card-border);
 }
 
 .story-item:hover {
@@ -155,12 +168,12 @@
 
 .story-text p {
   color: var(--text-secondary);
-  font-size: 1.1vw;
+  font-size: 2vw;
   font-weight: 400;
   margin: 0;
   line-height: 1.6;
   font-family: "DM Sans", sans-serif;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Icons Section */
@@ -178,11 +191,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--tertiary-bg);
   border-radius: 1.5vw;
   padding: 3vw 2vw;
   transition: all 0.3s ease;
-  border: 1px solid var(--card-border);
   cursor: pointer;
   min-width: 12vw;
 }
@@ -198,8 +209,6 @@
   width: 4vw;
   height: 4vw;
   margin-bottom: 2vw;
-  border-radius: 50%;
-  object-fit: cover;
   transition: all 0.3s ease;
 }
 
@@ -209,10 +218,14 @@
 
 .aboutus-icon p {
   color: var(--text-color);
-  font-size: 1.2vw;
+  font-size: 2vw;
   font-weight: 600;
   margin: 0;
   font-family: "DM Sans", sans-serif;
+  background: var(--text-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Stats Section */
@@ -230,11 +243,9 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: var(--tertiary-bg);
   border-radius: 1.5vw;
   padding: 4vw 3vw;
   transition: all 0.3s ease;
-  border: 1px solid var(--card-border);
   cursor: pointer;
   min-width: 15vw;
 }
@@ -247,20 +258,18 @@
 }
 
 .stat-value {
-  color: var(--button-color);
+  color: var(--text-color);
   font-size: 3vw;
   font-weight: 900;
   font-family: "DM Sans", sans-serif;
   margin-bottom: 1vw;
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  text-shadow: 0 0.2vw 0.4vw var(--text-muted);
 }
 
 .stat-label {
+  text-shadow: 0 0.2vw 0.4vw var(--text-muted);
   color: var(--text-color);
-  font-size: 1.2vw;
+  font-size: 3vw;
   font-weight: 600;
   margin: 0;
   font-family: "DM Sans", sans-serif;
